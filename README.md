@@ -17,12 +17,15 @@ Run Jupyter Notebook
 jupyter notebook
 ```
 # Linear Regression
+
 $$ f(x) = f_{(w,b)}(x) = wx + b $$
+
 *w, b: parameters, coefficients*
 
 ## Cost function
 *Squared error cost function*
-$$ J_{(w,b)} = \frac{1}{2m}\sum\limits_{i=1}^{m} (\hat{y}^{(i)} - y^{(i)})^2$$
+
+$$ J_{(w,b)} = \frac{1}{2m}\sum\limits_{i=1}^{m} (\hat{y}^{(i)} - y^{(i)})^2 $$
 
 # Entropy
 Entropy: Suprise factor/indicator denoted **E**
