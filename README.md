@@ -16,6 +16,20 @@ Run Jupyter Notebook
 ```
 jupyter notebook
 ```
+# Basic Concepts
+- **TP**: True Positive
+- **TN**: True Negative
+- **FP**: False Positive
+- **FN**: False Negative
+
+$$ Accuracy = \frac{TP + TN}{TP + TN + FP + FN} $$
+
+$$ Precision = \frac{TP}{TP + FP} $$
+
+$$ Recall = \frac{TP}{TP + FN} $$
+
+$$ F1 = 2(\frac{Precision * Recall}{Precision + Recall}) $$
+
 # Linear Regression
 
 $$ f(x) = f_{(w,b)}(x) = wx + b $$
