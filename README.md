@@ -10,7 +10,7 @@ python3 -m venv .venv
 pip install pip -U
 ```
 ```
-pip install pandas numpy matplotlib seaborn scikit-learn jupyter -U
+pip install pandas numpy matplotlib seaborn scikit-learn xgboost tensorflow imblearn jupyter -U
 ```
 Run Jupyter Notebook
 ```
