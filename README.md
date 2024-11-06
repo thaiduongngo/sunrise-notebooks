@@ -1,5 +1,7 @@
 # Installation
 ## Setup Environment
+https://www.python.org/downloads/
+(Recommended Python 3.12.7)
 ```
 python3 -m venv .venv
 ```
