@@ -1,20 +1,49 @@
 # Installation
 ## Setup Environment
+You can use either virtual environment from Python or Conda framework
+### Opt1: Virtual Environment
+#### Install Python
 https://www.python.org/downloads/
 (Recommended Python 3.12.7)
+### Create virtual environment
 ```
 python3 -m venv .venv
 ```
-## Activate virtual environment
-**MacOS:** ```source .venv/bin/activate```
-## Install Libraries
+#### Activate virtual environment
+*MacOS:* ```source .venv/bin/activate```
+#### Install Libraries
 ```
 pip install pip -U
 ```
 ```
 pip install pandas numpy matplotlib seaborn scikit-learn xgboost tensorflow imblearn jupyter -U
 ```
-Run Jupyter Notebook
+### Opt2: Conda
+#### Install Miniconda
+https://docs.anaconda.com/miniconda/
+#### Create environment
+```
+conda create --name sunrise-notebooks python=3.12.7 pip
+```
+where sunrise-notebooks is the name of environment
+#### Activate Environment
+```
+conda activate sunrise-notebooks
+```
+#### Install Libraries
+```
+pip install pip -U
+```
+```
+conda config --append channels conda-forge
+```
+```
+conda install pandas numpy matplotlib seaborn scikit-learn xgboost tensorflow jupyter 
+```
+```
+pip install imblearn -U 
+```
+### Run Jupyter Notebook
 ```
 jupyter notebook
 ```
