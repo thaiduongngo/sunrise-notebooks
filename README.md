@@ -16,7 +16,7 @@ python3 -m venv .venv
 pip install pip -U
 ```
 ```
-pip install pandas numpy matplotlib seaborn scikit-learn xgboost tensorflow imblearn jupyter -U
+pip install pandas numpy matplotlib seaborn scikit-learn xgboost tensorflow torch imblearn jupyter -U
 ```
 ### Opt2: Conda
 #### Install Miniconda
@@ -38,10 +38,17 @@ pip install pip -U
 conda config --append channels conda-forge
 ```
 ```
-conda install pandas numpy matplotlib seaborn scikit-learn xgboost tensorflow jupyter 
+conda install pandas numpy matplotlib seaborn scikit-learn xgboost tensorflow jupyter
 ```
 ```
-pip install imblearn -U 
+conda install pytorch::pytorch -c pytorch
+```
+```
+pip install imblearn  -U 
+```
+Only applicable for MacOS ARM
+```
+conda install "libblas=*=*accelerate"
 ```
 ### Run Jupyter Notebook
 ```
@@ -59,7 +66,7 @@ $$ Precision = \frac{TP}{TP + FP} $$
 
 $$ Recall = \frac{TP}{TP + FN} $$
 
-$$ F1 = 2(\frac{Precision * Recall}{Precision + Recall}) $$
+$$ f1 = 2(\frac{Precision * Recall}{Precision + Recall}) $$
 
 # Linear Regression
 
